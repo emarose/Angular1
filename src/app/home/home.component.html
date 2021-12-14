@@ -1,0 +1,10 @@
+<h3>Hola <strong>{{name}}</strong>! Adivina el número!</h3>
+<p>Cambia el nombre:</p>
+<input name="name" placeholder="Ingresa tu nombre" [(ngModel)]="name">
+<hr>
+<h2>{{guess}}</h2>
+<input name="number" [(ngModel)]="number">
+<button (click)="adivinarNumero()" [disabled]="modificado">Adivinar</button>
+<p>Último intento: {{number}}</p>
+
+
